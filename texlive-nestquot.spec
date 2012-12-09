@@ -45,3 +45,11 @@ been entered as "Foo 'bar' bletch".
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Mon Aug 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120606-1
++ Revision: 814495
+- Import texlive-nestquot
+- Import texlive-nestquot
+
