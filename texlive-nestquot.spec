@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-nestquot
 Version:	20180303
-Release:	2
+Release:	3
 Summary:	Alternate quotes between double and single with nesting
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/nestquot
