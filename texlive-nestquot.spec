@@ -1,17 +1,11 @@
-# revision 27323
-# category Package
-# catalog-ctan /macros/latex/contrib/nestquot
-# catalog-date 2012-06-06 18:43:10 +0200
-# catalog-license other-free
-# catalog-version undef
 Name:		texlive-nestquot
-Version:	20190228
+Version:	27323
 Release:	1
 Summary:	Alternate quotes between double and single with nesting
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/nestquot
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nestquot.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nestquot.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ quotes according to their nesting level. For example, the input
 been entered as "Foo 'bar' bletch".
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -38,18 +32,10 @@ been entered as "Foo 'bar' bletch".
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0
+%autosetup -p1 -c
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Mon Aug 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120606-1
-+ Revision: 814495
-- Import texlive-nestquot
-- Import texlive-nestquot
-
