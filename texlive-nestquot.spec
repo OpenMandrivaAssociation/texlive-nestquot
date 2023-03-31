@@ -1,6 +1,6 @@
 Name:		texlive-nestquot
 Version:	27323
-Release:	1
+Release:	2
 Summary:	Alternate quotes between double and single with nesting
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/nestquot
