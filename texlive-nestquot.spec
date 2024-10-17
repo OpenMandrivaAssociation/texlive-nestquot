@@ -3,7 +3,7 @@ Version:	27323
 Release:	2
 Summary:	Alternate quotes between double and single with nesting
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/nestquot
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/nestquot
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nestquot.r%{version}.tar.xz
 BuildArch:	noarch
